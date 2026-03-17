@@ -9,23 +9,20 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "my_first_package_msgs/action/dist_turtle.hpp"
 
-// TurtlesimSubscriber 역할을 할 간단한 클래스 (구조에 따라 상속하거나 직접 구현)
 class DistTurtleServer : public rclcpp::Node {
 public:
     using DistTurtle = my_first_package_msgs::action::DistTurtle;
     using GoalHandleDistTurtle = rclcpp_action::ServerGoalHandle<DistTurtle>;
 
     DistTurtleServer() : Node("dist_turtle_action_server") {
-        // 변수 초기화
+
         total_dist_ = 0.0;
         is_first_time_ = true;
 
-        // Publisher 및 Subscriber 설정
         publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
         pose_sub_ = this->create_subscription<turtlesim::msg::Pose>(
             "/turtle1/pose", 10, std::bind(&DistTurtleServer::pose_callback, this, std::placeholders::_1));
 
-        // Action Server 설정
         action_server_ = rclcpp_action::create_server<DistTurtle>(
             this,
             "dist_turtle",
@@ -33,7 +30,6 @@ public:
             std::bind(&DistTurtleServer::handle_cancel, this, std::placeholders::_1),
             std::bind(&DistTurtleServer::handle_accepted, this, std::placeholders::_1));
 
-        // Parameter 선언
         this->declare_parameter("quantile_time", 0.75);
         this->declare_parameter("almost_goal_time", 0.95);
 
@@ -44,7 +40,6 @@ public:
     }
 
 private:
-    // --- Member Variables ---
     double total_dist_;
     bool is_first_time_;
     turtlesim::msg::Pose current_pose_;
@@ -56,7 +51,6 @@ private:
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr pose_sub_;
     rclcpp_action::Server<DistTurtle>::SharedPtr action_server_;
 
-    // --- Callbacks ---
     void pose_callback(const turtlesim::msg::Pose::SharedPtr msg) {
         current_pose_ = *msg;
     }
