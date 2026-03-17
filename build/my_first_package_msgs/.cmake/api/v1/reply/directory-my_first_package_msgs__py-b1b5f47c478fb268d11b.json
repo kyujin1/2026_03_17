@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "my_first_package_msgs__py",
+		"source" : "/home/kyujin/ros2_study/build/my_first_package_msgs/my_first_package_msgs__py"
+	}
+}

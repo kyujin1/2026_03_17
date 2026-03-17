@@ -1,0 +1,33 @@
+[0.754s] Invoking command in '/home/kyujin/ros2_study/src/my_first_package': PYTHONPATH=/home/kyujin/ros2_study/build/my_first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_first_package build --build-base /home/kyujin/ros2_study/build/my_first_package/build install --record /home/kyujin/ros2_study/build/my_first_package/install.log --single-version-externally-managed install_data
+[1.005s] running egg_info
+[1.006s] writing ../../build/my_first_package/my_first_package.egg-info/PKG-INFO
+[1.006s] writing dependency_links to ../../build/my_first_package/my_first_package.egg-info/dependency_links.txt
+[1.006s] writing entry points to ../../build/my_first_package/my_first_package.egg-info/entry_points.txt
+[1.007s] writing requirements to ../../build/my_first_package/my_first_package.egg-info/requires.txt
+[1.007s] writing top-level names to ../../build/my_first_package/my_first_package.egg-info/top_level.txt
+[1.009s] reading manifest file '../../build/my_first_package/my_first_package.egg-info/SOURCES.txt'
+[1.010s] writing manifest file '../../build/my_first_package/my_first_package.egg-info/SOURCES.txt'
+[1.010s] running build
+[1.011s] running build_py
+[1.011s] copying my_first_package/my_service_server.py -> /home/kyujin/ros2_study/build/my_first_package/build/lib/my_first_package
+[1.011s] running install
+[1.012s] running install_lib
+[1.013s] copying /home/kyujin/ros2_study/build/my_first_package/build/lib/my_first_package/my_service_server.py -> /home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package
+[1.014s] byte-compiling /home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package/my_service_server.py to my_service_server.cpython-310.pyc
+[1.014s]   File "/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package/my_service_server.py", line 33
+[1.014s]     		for in range(len(theta():
+[1.014s]     		    ^^
+[1.014s] SyntaxError: invalid syntax
+[1.014s] 
+[1.015s] running install_data
+[1.015s] running install_egg_info
+[1.016s] removing '/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.017s] Copying ../../build/my_first_package/my_first_package.egg-info to /home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package-0.0.0-py3.10.egg-info
+[1.018s] running install_scripts
+[1.036s] Installing my_first_node script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[1.036s] Installing my_publisher script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[1.037s] Installing my_service_server script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[1.037s] Installing my_subscriber script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[1.037s] Installing turtle_cmd_and_pose script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[1.037s] writing list of installed files to '/home/kyujin/ros2_study/build/my_first_package/install.log'
+[1.056s] Invoked command in '/home/kyujin/ros2_study/src/my_first_package' returned '0': PYTHONPATH=/home/kyujin/ros2_study/build/my_first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_first_package build --build-base /home/kyujin/ros2_study/build/my_first_package/build install --record /home/kyujin/ros2_study/build/my_first_package/install.log --single-version-externally-managed install_data

@@ -1,0 +1,98 @@
+[0.269s] Invoking command in '/home/kyujin/ros2_study/build/my_second_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kyujin/ros2_study/install/my_first_package:/opt/ros/humble /usr/bin/cmake /home/kyujin/ros2_study/src/my_second_package -DCMAKE_INSTALL_PREFIX=/home/kyujin/ros2_study/install/my_second_package
+[0.312s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.312s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.312s]   contain a literal, direct call to the project() command.  Add a line of
+[0.312s]   code such as
+[0.312s] 
+[0.312s]     project(ProjectName)
+[0.312s] 
+[0.312s]   near the top of the file, but after cmake_minimum_required().
+[0.312s] 
+[0.312s]   CMake is pretending there is a "project(Project)" command on the first
+[0.312s]   line.
+[0.312s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.312s] [0m
+[0.617s] -- The C compiler identification is GNU 11.4.0
+[0.953s] -- The CXX compiler identification is GNU 11.4.0
+[1.102s] -- Detecting C compiler ABI info
+[1.208s] -- Detecting C compiler ABI info - done
+[1.215s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.215s] -- Detecting C compile features
+[1.217s] -- Detecting C compile features - done
+[1.221s] -- Detecting CXX compiler ABI info
+[1.345s] -- Detecting CXX compiler ABI info - done
+[1.352s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.352s] -- Detecting CXX compile features
+[1.353s] -- Detecting CXX compile features - done
+[1.370s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[1.510s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.581s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:52 (while):
+[1.581s]   had incorrect arguments:
+[1.581s] 
+[1.581s]     "TRUE"
+[1.582s] 
+[1.582s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[1.582s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[1.582s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[1.582s]   command to set the policy and suppress this warning.
+[1.582s] Call Stack (most recent call first):
+[1.582s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:34 (_normalize_path__collapse_redundant)
+[1.582s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[1.582s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[1.582s]   CMakeLists.txt:2 (find_package)
+[1.582s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.582s] [0m
+[1.582s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:72 (while):
+[1.582s]   had incorrect arguments:
+[1.582s] 
+[1.582s]     "TRUE"
+[1.582s] 
+[1.582s]   An argument named "TRUE" appears in a conditional statement.  Policy
+[1.582s]   CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+[1.582s]   "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+[1.582s]   command to set the policy and suppress this warning.
+[1.582s] Call Stack (most recent call first):
+[1.583s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/normalize_path.cmake:35 (_normalize_path__collapse_uplevel_reference)
+[1.583s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_include_directories-extras.cmake:13 (normalize_path)
+[1.583s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[1.583s]   CMakeLists.txt:2 (find_package)
+[1.583s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.583s] [0m
+[1.594s] [33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[1.594s]   Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake
+[1.594s]   --help-policy CMP0057" for policy details.  Use the cmake_policy command to
+[1.594s]   set the policy and suppress this warning.
+[1.594s] 
+[1.594s]   IN_LIST will be interpreted as an operator when the policy is set to NEW.
+[1.594s]   Since the policy is not set the OLD behavior will be used.
+[1.594s] Call Stack (most recent call first):
+[1.594s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:34 (list_append_unique)
+[1.594s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[1.594s]   CMakeLists.txt:2 (find_package)
+[1.594s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.594s] [0m
+[1.595s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[1.595s]   if given arguments:
+[1.595s] 
+[1.595s]     "NOT" "element" "IN_LIST" "rclcpp_INCLUDE_DIRS"
+[1.595s] 
+[1.595s]   Unknown arguments specified
+[1.595s] Call Stack (most recent call first):
+[1.595s]   /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:34 (list_append_unique)
+[1.595s]   /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[1.595s]   CMakeLists.txt:2 (find_package)
+[1.595s] 
+[1.595s] [0m
+[1.595s] [31mCMake Error in CMakeLists.txt:
+[1.595s]   No cmake_minimum_required command is present.  A line of code such as
+[1.595s] 
+[1.595s]     cmake_minimum_required(VERSION 3.22)
+[1.595s] 
+[1.595s]   should be added at the top of the file.  The version specified may be lower
+[1.595s]   if you wish to support older CMake versions for this project.  For more
+[1.595s]   information run "cmake --help-policy CMP0000".
+[1.595s] 
+[1.595s] [0m
+[1.596s] -- Configuring incomplete, errors occurred!
+[1.596s] See also "/home/kyujin/ros2_study/build/my_second_package/CMakeFiles/CMakeOutput.log".
+[1.598s] Invoked command in '/home/kyujin/ros2_study/build/my_second_package' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kyujin/ros2_study/install/my_first_package:/opt/ros/humble /usr/bin/cmake /home/kyujin/ros2_study/src/my_second_package -DCMAKE_INSTALL_PREFIX=/home/kyujin/ros2_study/install/my_second_package

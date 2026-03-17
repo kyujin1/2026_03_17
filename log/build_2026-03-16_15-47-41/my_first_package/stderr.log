@@ -1,0 +1,5 @@
+  File "/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package/dist_turtle_action_server.py", line 52
+    		whilt True:
+    		      ^^^^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,5 @@
+  File "/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package/my_service_server.py", line 33
+    		forn in range(len(theta()):
+    		                          ^
+SyntaxError: invalid syntax
+

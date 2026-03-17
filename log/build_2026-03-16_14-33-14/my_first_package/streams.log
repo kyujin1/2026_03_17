@@ -1,0 +1,26 @@
+[0.617s] Invoking command in '/home/kyujin/ros2_study/src/my_first_package': PYTHONPATH=/home/kyujin/ros2_study/build/my_first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_first_package build --build-base /home/kyujin/ros2_study/build/my_first_package/build install --record /home/kyujin/ros2_study/build/my_first_package/install.log --single-version-externally-managed install_data
+[0.837s] running egg_info
+[0.837s] writing ../../build/my_first_package/my_first_package.egg-info/PKG-INFO
+[0.837s] writing dependency_links to ../../build/my_first_package/my_first_package.egg-info/dependency_links.txt
+[0.838s] writing entry points to ../../build/my_first_package/my_first_package.egg-info/entry_points.txt
+[0.838s] writing requirements to ../../build/my_first_package/my_first_package.egg-info/requires.txt
+[0.838s] writing top-level names to ../../build/my_first_package/my_first_package.egg-info/top_level.txt
+[0.839s] reading manifest file '../../build/my_first_package/my_first_package.egg-info/SOURCES.txt'
+[0.840s] writing manifest file '../../build/my_first_package/my_first_package.egg-info/SOURCES.txt'
+[0.840s] running build
+[0.840s] running build_py
+[0.841s] running install
+[0.841s] running install_lib
+[0.842s] running install_data
+[0.842s] running install_egg_info
+[0.844s] removing '/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.844s] Copying ../../build/my_first_package/my_first_package.egg-info to /home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages/my_first_package-0.0.0-py3.10.egg-info
+[0.845s] running install_scripts
+[0.862s] Installing dist_turtle_action_server script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] Installing my_first_node script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] Installing my_publisher script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] Installing my_service_server script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] Installing my_subscriber script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] Installing turtle_cmd_and_pose script to /home/kyujin/ros2_study/install/my_first_package/lib/my_first_package
+[0.863s] writing list of installed files to '/home/kyujin/ros2_study/build/my_first_package/install.log'
+[0.881s] Invoked command in '/home/kyujin/ros2_study/src/my_first_package' returned '0': PYTHONPATH=/home/kyujin/ros2_study/build/my_first_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyujin/ros2_study/install/my_first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_first_package build --build-base /home/kyujin/ros2_study/build/my_first_package/build install --record /home/kyujin/ros2_study/build/my_first_package/install.log --single-version-externally-managed install_data

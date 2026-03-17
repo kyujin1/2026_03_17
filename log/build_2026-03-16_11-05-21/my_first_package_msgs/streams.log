@@ -1,0 +1,28 @@
+[0.257s] Invoking command in '/home/kyujin/ros2_study/build/my_first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kyujin/ros2_study/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/kyujin/ros2_study/build/my_first_package_msgs -- -j12 -l12
+[0.309s] [ 10%] Built target my_first_package_msgs__rosidl_generator_c
+[0.313s] [ 12%] Built target my_first_package_msgs__cpp
+[0.327s] [ 12%] Built target ament_cmake_python_copy_my_first_package_msgs
+[0.338s] [ 33%] Built target my_first_package_msgs__rosidl_typesupport_c
+[0.339s] [ 33%] Built target my_first_package_msgs__rosidl_typesupport_introspection_c
+[0.341s] [ 43%] Built target my_first_package_msgs__rosidl_typesupport_fastrtps_c
+[0.341s] [ 53%] Built target my_first_package_msgs__rosidl_typesupport_fastrtps_cpp
+[0.342s] [ 66%] Built target my_first_package_msgs__rosidl_typesupport_introspection_cpp
+[0.343s] [ 74%] Built target my_first_package_msgs__rosidl_typesupport_cpp
+[0.351s] Fatal Python error: init_import_site: Failed to import the site module
+[0.352s] Python runtime state: initialized
+[0.352s] Traceback (most recent call last):
+[0.352s]   File "/usr/lib/python3.10/site.py", line 79, in <module>
+[0.353s] gmake[2]: *** [CMakeFiles/my_first_package_msgs.dir/build.make:87: CMakeFiles/my_first_package_msgs.dir/depend] Interrupt
+[0.353s] gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/my_first_package_msgs.dir/all] Interrupt
+[0.353s]     import os
+[0.353s]   File "/usr/lib/python3.10/os.py", line 29, in <module>
+[0.355s]     from _collections_abc import _check_methods
+[0.355s]   File "/usr/lib/python3.10/_collections_abc.py", line 1092, in <module>
+[0.358s]     class ByteString(Sequence):
+[0.358s]   File "/usr/lib/python3.10/abc.py", line 106, in __new__
+[0.358s]     cls = super().__new__(mcls, name, bases, namespace, **kwargs)
+[0.359s] KeyboardInterrupt
+[0.359s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_my_first_package_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_my_first_package_msgs_egg] Interrupt
+[0.360s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_my_first_package_msgs_egg.dir/all] Interrupt
+[0.360s] gmake: *** [Makefile:146: all] Interrupt
+[0.362s] Invoked command in '/home/kyujin/ros2_study/build/my_first_package_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kyujin/ros2_study/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/kyujin/ros2_study/build/my_first_package_msgs -- -j12 -l12
