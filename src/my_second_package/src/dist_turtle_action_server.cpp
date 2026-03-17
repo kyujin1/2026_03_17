@@ -69,7 +69,7 @@ private:
     }
 
     void handle_accepted(const std::shared_ptr<GoalHandleDistTurtle> goal_handle) {
-        // 별도 스레드에서 실행 (Blocking 방지)
+
         std::thread{std::bind(&DistTurtleServer::execute, this, std::placeholders::_1), goal_handle}.detach();
     }
 
